@@ -11,6 +11,11 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'Posts'
+    }
+  },
   async asyncData ({ $content }) {
     const posts = await $content('posts').fetch()
     return {

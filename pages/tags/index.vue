@@ -10,6 +10,11 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'Tags'
+    }
+  },
   async asyncData ({ $content }) {
     const tags = await $content('tags').fetch()
     return { tags }

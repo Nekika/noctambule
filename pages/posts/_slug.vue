@@ -8,6 +8,11 @@
 import Post from '~/components/Post'
 
 export default {
+  head () {
+    return {
+      title: this.post.title
+    }
+  },
   components: {
     Post
   },
