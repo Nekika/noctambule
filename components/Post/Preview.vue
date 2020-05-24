@@ -5,7 +5,8 @@
     <nuxt-link
       v-for="(tag, index) in post.tags"
       :key="index"
-      :to="`/tags/${tag}`">
+      :to="`/tags/${tag}`"
+    >
       #{{ tag }}
     </nuxt-link>
   </div>
@@ -13,7 +14,12 @@
 
 <script>
 export default {
-  props: ['post']
+  props: {
+    post: {
+      type: Object,
+      default: null
+    }
+  }
 }
 </script>
 

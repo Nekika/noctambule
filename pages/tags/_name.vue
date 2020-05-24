@@ -12,6 +12,10 @@
 import Preview from '~/components/Post/Preview'
 
 export default {
+
+  components: {
+    Preview
+  },
   async asyncData ({ params, $content }) {
     const posts = await $content('posts').where({ tags: { $contains: params.name } }).fetch()
     return {
@@ -22,9 +26,6 @@ export default {
     return {
       title: `${this.$route.params.name} posts`
     }
-  },
-  components: {
-    Preview
   }
 }
 </script>

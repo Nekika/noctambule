@@ -1,8 +1,8 @@
 <template>
   <div id="home">
-    <nuxt-content :document="page"></nuxt-content>
+    <nuxt-content :document="page" />
     <h2>Latest post</h2>
-    <Preview :post="latestPost"/>
+    <Preview :post="latestPost" />
   </div>
 </template>
 
@@ -10,6 +10,9 @@
 import Preview from '~/components/Post/Preview'
 
 export default {
+  components: {
+    Preview
+  },
   async asyncData ({ $content }) {
     const page = await $content('home').fetch()
     const posts = await $content('posts').sortBy('updated_at', 'desc').limit(1).fetch()
@@ -22,9 +25,6 @@ export default {
     return {
       title: 'Home'
     }
-  },
-  components: {
-    Preview
   }
 }
 </script>

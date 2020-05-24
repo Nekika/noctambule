@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Post :post="post"></Post>
+    <Post :post="post" />
   </div>
 </template>
 
@@ -8,11 +8,6 @@
 import Post from '~/components/Post'
 
 export default {
-  head () {
-    return {
-      title: this.post.title
-    }
-  },
   components: {
     Post
   },
@@ -20,6 +15,11 @@ export default {
     const posts = await $content('posts').where({ slug: params.slug }).fetch()
     return {
       post: posts[0]
+    }
+  },
+  head () {
+    return {
+      title: this.post.title
     }
   }
 }

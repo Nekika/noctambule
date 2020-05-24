@@ -6,7 +6,12 @@
 
 <script>
 export default {
-  props: ['content']
+  props: {
+    content: {
+      type: Object,
+      default: null
+    }
+  }
 }
 </script>
 

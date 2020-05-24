@@ -1,7 +1,7 @@
 <template>
   <Header>
     <h2>Noctambule</h2>
-    <Navbar></Navbar>
+    <Navbar />
   </Header>
 </template>
 

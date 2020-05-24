@@ -5,7 +5,8 @@
     <nuxt-link
       v-for="(tag, index) in tags"
       :key="index"
-      :to="`/tags/${tag}`">
+      :to="`/tags/${tag}`"
+    >
       #{{ tag }}
     </nuxt-link>
   </div>
@@ -13,7 +14,20 @@
 
 <script>
 export default {
-  props: ['title', 'cover', 'tags'],
+  props: {
+    title: {
+      type: String,
+      default: ''
+    },
+    cover: {
+      type: String,
+      default: ''
+    },
+    tags: {
+      type: Array,
+      default: () => []
+    }
+  },
   computed: {
     coverSrc () { return require(`~/assets/covers/${this.cover}`) }
   }
