@@ -1,13 +1,16 @@
 <template>
-  <div class="post">
-    <h1>{{ post.title }}</h1>
-    <nuxt-content :document="post"></nuxt-content>
+  <div class="container">
+    <Post :post="post"></Post>
   </div>
 </template>
 
 <script>
+import Post from '~/components/Post'
+
 export default {
-  layout: 'post',
+  components: {
+    Post
+  },
   async asyncData ({ params, $content }) {
     const posts = await $content('posts').where({ slug: params.slug }).fetch()
     return {
