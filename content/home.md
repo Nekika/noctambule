@@ -19,5 +19,3 @@ Otherwise, I'll be glad to answer any other question so [email me](mailto:contac
 on <a target="_blank" href="https://www.linkedin.com/in/hugo-jahnke-a96ba8146/">LinkedIn</a>, 
 <a target="_blank" href="https://github.com/Nekika">GitHub</a> or 
 <a target="_blank" href="https://twitter.com/HugoJahnke">Twitter</a>.
-
-# Latest post
