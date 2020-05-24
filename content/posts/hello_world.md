@@ -2,6 +2,7 @@
 title: Bonjour monde! *
 summary: In this first post I'll introduce myself and explain what is Noctambule
 tags: ['untagged']
+cover: night-in-tokyo.jpg
 ---
 \* *french literal translation of [Hello world!](https://fr.wikipedia.org/wiki/Hello_world)* 
 
