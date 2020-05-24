@@ -2,7 +2,7 @@
   <div id="tags">
     <h1>Tags</h1>
     <div v-for="(tag, index) in tags" :key="index">
-      <h3>#{{ tag.name }}</h3>
+      <h3><nuxt-link :to="`/tags/${tag.name}`">#{{ tag.name }}</nuxt-link></h3>
       <p>{{ tag.description }}</p>
     </div>
   </div>
