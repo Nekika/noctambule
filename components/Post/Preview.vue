@@ -1,6 +1,10 @@
 <template>
   <div class="post-preview">
-    <h3>{{ post.title }}</h3>
+    <h3>
+      <nuxt-link :to="`/posts/${post.slug}`">
+        {{ post.title }}
+      </nuxt-link>
+    </h3>
     <p>{{ post.summary }}</p>
     <nuxt-link
       v-for="(tag, index) in post.tags"
