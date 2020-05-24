@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
-    <Post :post="post" />
-  </div>
+  <Post :post="post" />
 </template>
 
 <script>
