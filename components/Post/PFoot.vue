@@ -1,7 +1,33 @@
 <template>
-  <div class="post-author">
-    <img src="~/assets/images/nekika.png" alt="Nekika">
-    <p>Hugo « Nekika » Jahnke</p>
-    <p><a href="mailto:nekika@noctambule.something">nekika@noctambule.something</a></p>
+  <div class="post-foot">
+    <Author />
+    <div class="post-info">
+      <Tags :tags="tags" />
+      <p class="post-date">
+        {{ date }}
+      </p>
+    </div>
   </div>
 </template>
+
+<script>
+import Author from './Author'
+import Tags from './Tags'
+
+export default {
+  components: {
+    Author,
+    Tags
+  },
+  props: {
+    date: {
+      type: String,
+      default: ''
+    },
+    tags: {
+      type: Array,
+      default: () => []
+    }
+  }
+}
+</script>
