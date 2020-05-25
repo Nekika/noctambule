@@ -7,8 +7,8 @@
 module.exports = {
   theme: {
     spacing: {
-      sm: '12px',
-      md: '24px',
+      sm: '16px',
+      md: '32px',
       lg: '48px',
       xl: '64px'
     },
