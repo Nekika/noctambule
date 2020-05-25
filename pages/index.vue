@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <nuxt-content :document="page" />
+    <nuxt-content :document="page" class="text-justify" />
     <h2>Latest post</h2>
     <Preview :post="latestPost" />
   </div>
