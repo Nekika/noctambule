@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     spacing: {
       sm: '16px',
-      md: '32px',
-      lg: '48px',
-      xl: '64px'
+      md: '64px',
+      lg: '96px',
+      xl: '128px'
     },
     fontFamily: {
       logo: ['Shadows Into Light', 'cursive'],
