@@ -2,6 +2,7 @@
   <div class="post-cover">
     <img :src="coverSrc" alt="cover">
     <h1>{{ title }}</h1>
+    <p>Hugo « Nekika » Jahnke</p>
     <Tags :tags="tags" />
   </div>
 </template>
