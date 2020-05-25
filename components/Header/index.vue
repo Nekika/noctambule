@@ -1,6 +1,8 @@
 <template>
   <Header>
-    <h2>Noctambule</h2>
+    <nuxt-link to="/" tag="h2">
+      Noctambule
+    </nuxt-link>
     <Navbar />
   </Header>
 </template>
