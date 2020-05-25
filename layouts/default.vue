@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="px-sm md:px-md lg:px-lg xl:px-xl">
     <Header />
     <nuxt />
     <Footer />
@@ -17,6 +17,3 @@ export default {
   }
 }
 </script>
-
-<style>
-</style>
