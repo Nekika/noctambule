@@ -1,10 +1,10 @@
 <template>
-  <Header>
-    <nuxt-link to="/" tag="h2">
+  <header class="grid grid-cols-2 items-center">
+    <nuxt-link to="/" tag="h2" class="font-logo">
       Noctambule
     </nuxt-link>
     <Navbar />
-  </Header>
+  </header>
 </template>
 
 <script>

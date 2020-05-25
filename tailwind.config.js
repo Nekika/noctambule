@@ -11,6 +11,10 @@ module.exports = {
       md: '24px',
       lg: '48px',
       xl: '64px'
+    },
+    fontFamily: {
+      logo: ['Shadows Into Light', 'cursive'],
+      body: ['Open Sans', 'sans-serif']
     }
   },
   variants: {},
