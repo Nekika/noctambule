@@ -2,18 +2,17 @@
   <div class="post-cover">
     <img :src="coverSrc" alt="cover">
     <h1>{{ title }}</h1>
-    <nuxt-link
-      v-for="(tag, index) in tags"
-      :key="index"
-      :to="`/tags/${tag}`"
-    >
-      #{{ tag }}
-    </nuxt-link>
+    <Tags :tags="tags" />
   </div>
 </template>
 
 <script>
+import Tags from './Tags'
+
 export default {
+  components: {
+    Tags
+  },
   props: {
     title: {
       type: String,
