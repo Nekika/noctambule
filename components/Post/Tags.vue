@@ -1,12 +1,12 @@
 <template>
   <div class="post-tags">
-    <nuxt-link
+    <NLink
       v-for="tag in tags"
       :key="tag"
       :to="`/tags/${tag}`"
     >
       #{{ tag }}
-    </nuxt-link>
+    </NLink>
   </div>
 </template>
 
