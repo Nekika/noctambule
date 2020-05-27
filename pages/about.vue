@@ -9,6 +9,11 @@ export default {
   async asyncData ({ $content }) {
     const page = await $content('about').fetch()
     return { page }
+  },
+  head () {
+    return {
+      title: 'About'
+    }
   }
 }
 </script>
