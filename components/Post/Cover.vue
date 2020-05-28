@@ -1,7 +1,7 @@
 <template>
   <div>
     <img :src="coverSrc" alt="cover">
-    <p class="text-center">
+    <p class="text-center text-xs text-lightgrey">
       Cover : {{ author }} | Source : <a :href="source.link">{{ source.name }}</a>
     </p>
   </div>
