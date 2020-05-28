@@ -24,7 +24,7 @@ export default {
     @apply bg-grey border-b border-lightgrey shadow-nav;
 
     /* Position */
-    @apply sticky top-0 inset-x-0;
+    @apply sticky top-0 inset-x-0 z-10;
 
     /* Display */
     @apply grid grid-cols-2 items-center py-2;
