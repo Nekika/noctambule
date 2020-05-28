@@ -1,7 +1,15 @@
 <template>
-  <nav>
-    <nuxt-link to="/">Home</nuxt-link>
-    <nuxt-link to="/posts">Posts</nuxt-link>
-    <nuxt-link to="/tags">Tags</nuxt-link>
+  <nav class="flex justify-around">
+    <NLink to="/posts">Posts</NLink>
+    <NLink to="/tags">Tags</NLink>
   </nav>
 </template>
+
+<style>
+  nav > a {
+    @apply text-white no-underline
+  }
+  nav > a:hover {
+    @apply text-lightgrey
+  }
+</style>

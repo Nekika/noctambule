@@ -2,7 +2,7 @@
   <div class="post">
     <PHead :title="title" :cover="cover" :tags="tags" />
     <PBody :content="post" />
-    <PFoot />
+    <PFoot :tags="tags" :date="date" />
   </div>
 </template>
 
@@ -26,7 +26,8 @@ export default {
   computed: {
     title () { return this.post.title },
     cover () { return this.post.cover },
-    tags () { return this.post.tags }
+    tags () { return this.post.tags },
+    date () { return this.post.updatedAt }
   }
 }
 </script>

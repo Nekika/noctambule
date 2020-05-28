@@ -1,23 +1,22 @@
 <template>
   <div class="post-preview">
     <h3>
-      <nuxt-link :to="`/posts/${post.slug}`">
+      <NLink :to="`/posts/${post.slug}`">
         {{ post.title }}
-      </nuxt-link>
+      </NLink>
     </h3>
     <p>{{ post.summary }}</p>
-    <nuxt-link
-      v-for="(tag, index) in post.tags"
-      :key="index"
-      :to="`/tags/${tag}`"
-    >
-      #{{ tag }}
-    </nuxt-link>
+    <Tags :tags="post.tags" />
   </div>
 </template>
 
 <script>
+import Tags from './Tags'
+
 export default {
+  components: {
+    Tags
+  },
   props: {
     post: {
       type: Object,
