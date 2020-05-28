@@ -9,13 +9,7 @@
 </template>
 
 <script>
-import Preview from '~/components/Post/Preview'
-
 export default {
-
-  components: {
-    Preview
-  },
   async asyncData ({ params, $content }) {
     const posts = await $content('posts').where({ tags: { $contains: params.name } }).fetch()
     return {
