@@ -47,7 +47,7 @@ export default {
 
   .post-preview > .information {
     /* Position */
-    @apply absolute bottom-0;
+    @apply absolute bottom-0 inset-x-0;
 
     /* Display */
     @apply p-2;
