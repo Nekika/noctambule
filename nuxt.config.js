@@ -2,6 +2,12 @@
 export default {
   mode: 'universal',
   /*
+  ** Server conf
+  */
+  server: {
+    host: '0.0.0.0'
+  },
+  /*
   ** Headers of the page
   */
   head: {
