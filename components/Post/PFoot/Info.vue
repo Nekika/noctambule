@@ -1,9 +1,7 @@
 <template>
-  <div>
+  <div class="self-center">
+    <p class="text-lightgrey"> {{ formattedDate }} </p>
     <Tags :tags="tags" />
-    <p>
-      {{ formattedDate }}
-    </p>
   </div>
 </template>
 

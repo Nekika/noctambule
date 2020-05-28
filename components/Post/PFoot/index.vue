@@ -1,7 +1,7 @@
 <template>
-  <div class="grid grid-cols-2">
-    <Author />
+  <div>
     <Info :date="date" :tags="tags" />
+    <Author />
   </div>
 </template>
 
@@ -27,6 +27,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  div {
+    @apply text-center;
+    @screen md {
+      @apply grid grid-cols-2;
+    }
+  }
 </style>
