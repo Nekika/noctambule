@@ -1,28 +1,23 @@
 <template>
-  <div class="post-foot">
+  <div class="grid grid-cols-2">
     <Author />
-    <div class="post-info">
-      <Tags :tags="tags" />
-      <p class="post-date">
-        {{ date }}
-      </p>
-    </div>
+    <Info :date="date" :tags="tags" />
   </div>
 </template>
 
 <script>
 import Author from './Author'
-import Tags from './Tags'
+import Info from './Info'
 
 export default {
   components: {
     Author,
-    Tags
+    Info
   },
   props: {
     date: {
-      type: String,
-      default: ''
+      type: Date,
+      default: null
     },
     tags: {
       type: Array,
@@ -31,3 +26,7 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>
