@@ -1,9 +1,11 @@
 <template>
-  <div class="post-cover">
+  <div>
     <Cover :cover="cover" :credits="credits" />
-    <h1>{{ title }}</h1>
-    <p>Hugo « Nekika » Jahnke</p>
-    <Tags :tags="tags" />
+    <div class="text-center my-8">
+      <h1 class="font-bold">{{ title }}</h1>
+      <p>Hugo « Nekika » Jahnke</p>
+      <Tags :tags="tags" />
+    </div>
   </div>
 </template>
 
@@ -36,7 +38,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>
