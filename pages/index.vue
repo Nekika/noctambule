@@ -40,12 +40,6 @@ export default {
       grid-gap: 30px;
     }
   }
-  #home > div {
-    @apply my-4;
-    @screen md {
-      @apply my-0;
-    }
-  }
   #home > div > * {
     @apply mb-2;
   }
