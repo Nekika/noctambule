@@ -10,7 +10,11 @@ module.exports = {
       blue: '#7289DA',
       grey: '#2C2F33',
       lightgrey: '#99AAB5',
+      darkgrey: '#23272A',
       white: '#FFFFFF'
+    },
+    boxShadow: {
+      nav: '0 20px 10px -10px rgba(0,0,0,0.2)'
     },
     spacing: {
       0: '0',
