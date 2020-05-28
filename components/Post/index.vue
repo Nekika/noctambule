@@ -1,6 +1,6 @@
 <template>
   <div class="post">
-    <PHead :title="title" :cover="cover" :tags="tags" />
+    <PHead :title="title" :cover="cover" :tags="tags" :credits="credits" />
     <PBody :content="post" />
     <PFoot :tags="tags" :date="date" />
   </div>
@@ -27,7 +27,8 @@ export default {
     title () { return this.post.title },
     cover () { return this.post.cover },
     tags () { return this.post.tags },
-    date () { return this.post.updatedAt }
+    date () { return this.post.updatedAt },
+    credits () { return this.post.credits }
   }
 }
 </script>

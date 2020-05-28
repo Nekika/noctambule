@@ -1,6 +1,6 @@
 <template>
   <div class="post-cover">
-    <img :src="coverSrc" alt="cover">
+    <Cover :cover="cover" :credits="credits" />
     <h1>{{ title }}</h1>
     <p>Hugo « Nekika » Jahnke</p>
     <Tags :tags="tags" />
@@ -8,10 +8,12 @@
 </template>
 
 <script>
+import Cover from './Cover'
 import Tags from './Tags'
 
 export default {
   components: {
+    Cover,
     Tags
   },
   props: {
@@ -26,10 +28,11 @@ export default {
     tags: {
       type: Array,
       default: () => []
+    },
+    credits: {
+      type: Object,
+      default: null
     }
-  },
-  computed: {
-    coverSrc () { return require(`~/assets/covers/${this.cover}`) }
   }
 }
 </script>
