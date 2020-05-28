@@ -36,7 +36,7 @@ export default {
   #home {
     @screen md {
       @apply mt-10;
-      @apply grid grid-cols-2 grid-rows-2;
+      @apply grid grid-cols-2;
       grid-gap: 30px;
     }
   }
