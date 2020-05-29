@@ -1,5 +1,5 @@
 ## Motivations
-The main reason is that this blog is a personal side-project that allows me to train myself with some new technologies.
+The main reason is that this blog is a personal side-project that allows me to train with some new technologies.
 Indeed, it's developed using [Nuxt.js](https://nuxtjs.org) (a [Vue.js](https://vuejs.org) framework) and
 [Tailwind](https://tailwindcss.com), that I've never used before.
 
