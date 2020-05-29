@@ -43,4 +43,20 @@ export default {
   #home > div > * {
     @apply mb-2;
   }
+  #home h1,h2,h3 {
+    @apply text-center
+  }
+  #home img {
+    @apply my-3 mx-auto;
+    max-height: 64px;
+    @screen md {
+      max-height: 80px;
+    }
+    @screen lg {
+      max-height: 96px;
+    }
+    @scren xl {
+      max-height: 128px;
+    }
+  }
 </style>
