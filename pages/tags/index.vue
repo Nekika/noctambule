@@ -1,7 +1,6 @@
 <template>
   <div id="tags">
-    <h1>Tags</h1>
-    <div v-for="(tag, index) in tags" :key="index">
+    <div v-for="(tag, index) in tags" :key="index" class="text-center mt-5">
       <h3>
         <nuxt-link :to="`/tags/${tag.name}`">
           #{{ tag.name }}
