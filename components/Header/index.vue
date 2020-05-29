@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <NLink to="/" class="text-4xl font-logo text-white no-underline cursor-pointer hover:text-lightgrey md:text-6xl">
+      <NLink to="/" class="font-logo text-white no-underline cursor-pointer hover:text-lightgrey md:text-6xl">
         Noctambule
       </NLink>
     </div>
@@ -28,5 +28,18 @@ export default {
 
     /* Display */
     @apply grid grid-cols-2 items-center py-2;
+  }
+
+  .container > a {
+    @apply text-2xl;
+    @screen md {
+      @apply text-3xl;
+    }
+    @screen lg {
+      @apply text-4xl;
+    }
+    @screen xl {
+      @apply text-5xl;
+    }
   }
 </style>
