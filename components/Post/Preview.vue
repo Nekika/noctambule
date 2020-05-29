@@ -4,18 +4,13 @@
     <div class="information">
       <h3>{{ post.title }}</h3>
       <p class="summary text-sm">{{ post.summary }}</p>
-      <Tags :tags="post.tags" />
+      <PostTags :tags="post.tags" />
     </div>
   </NLink>
 </template>
 
 <script>
-import Tags from './Tags'
-
 export default {
-  components: {
-    Tags
-  },
   props: {
     post: {
       type: Object,

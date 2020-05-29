@@ -1,10 +1,9 @@
 <template>
   <div>
-    <Preview
-      v-for="post in posts"
-      :key="post.slug"
-      :post="post"
-    />
+    <h1 class="text-center mb-2">
+      <NLink :to="`/tags/${tag}`">#{{ tag }}</NLink>
+    </h1>
+    <PostList :posts="posts" />
   </div>
 </template>
 
@@ -16,14 +15,13 @@ export default {
       posts
     }
   },
+  computed: {
+    tag () { return this.$route.params.name }
+  },
   head () {
     return {
-      title: `${this.$route.params.name} posts`
+      title: `#${this.tag} posts`
     }
   }
 }
 </script>
-
-<style scoped>
-
-</style>

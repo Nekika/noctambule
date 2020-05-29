@@ -3,7 +3,7 @@
     <nuxt-content :document="intro" />
     <div>
       <h2>Latest post</h2>
-      <Preview :post="latestPost" />
+      <PostPreview :post="latestPost" />
     </div>
     <nuxt-content :document="motivations" />
     <nuxt-content :document="contact" />

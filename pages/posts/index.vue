@@ -1,10 +1,6 @@
 <template>
   <div id="posts">
-    <Preview
-      v-for="post in posts"
-      :key="post.slug"
-      :post="post"
-    />
+    <PostList :posts="posts" />
   </div>
 </template>
 
@@ -23,12 +19,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  #posts {
-    @apply gap-4;
-    @screen md {
-      @apply grid grid-cols-2;
-    }
-  }
-</style>
