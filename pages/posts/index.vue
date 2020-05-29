@@ -23,3 +23,12 @@ export default {
   }
 }
 </script>
+
+<style>
+  #posts {
+    @apply gap-4;
+    @screen md {
+      @apply grid grid-cols-2;
+    }
+  }
+</style>
