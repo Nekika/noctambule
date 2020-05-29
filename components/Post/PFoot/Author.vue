@@ -1,7 +1,6 @@
 <template>
   <div class="flex flex-col items-center">
-    <img src="~/assets/images/nekika.png" alt="Nekika">
-    <p>Hugo « Nekika » Jahnke</p>
+    <p class="text-lightgrey">Hugo « Nekika » Jahnke</p>
     <p><a href="mailto:nekika@noctambule.something">nekika@noctambule.io</a></p>
     <p>
       <a href="https://github.com/Nekika">GitHub</a>

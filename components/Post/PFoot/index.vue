@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="post-foot">
     <Info :date="date" :tags="tags" />
     <Author />
   </div>
@@ -28,8 +28,8 @@ export default {
 </script>
 
 <style scoped>
-  div {
-    @apply text-center;
+  #post-foot {
+    @apply mt-5;
     @screen md {
       @apply grid grid-cols-2;
     }

@@ -1,5 +1,5 @@
 <template>
-  <div class="self-center">
+  <div class="text-center">
     <p class="text-lightgrey"> {{ formattedDate }} </p>
     <Tags :tags="tags" />
   </div>
