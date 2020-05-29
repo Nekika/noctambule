@@ -46,7 +46,7 @@ export default {
   #home h1,h2,h3 {
     @apply text-center
   }
-  #home img {
+  #home img.avatar {
     @apply my-3 mx-auto;
     max-height: 64px;
     @screen md {
