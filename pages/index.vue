@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="mt-3 text-justify">
+  <div id="home">
     <nuxt-content :document="intro" />
     <div>
       <h2>Latest post</h2>
@@ -34,8 +34,8 @@ export default {
 
 <style>
   #home {
+    @apply mt-4 text-justify;
     @screen md {
-      @apply mt-10;
       @apply grid grid-cols-2;
       grid-row-gap: 15px;
       grid-column-gap: 30px;
@@ -44,8 +44,8 @@ export default {
   #home > div > * {
     @apply mb-2;
   }
-  #home > h1, #home > h2, #home > h3 {
-    @apply text-center
+  #home h1, #home h2, #home h3 {
+    @apply text-center;
   }
   #home img.avatar {
     @apply my-3 mx-auto;
