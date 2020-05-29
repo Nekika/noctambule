@@ -37,13 +37,14 @@ export default {
     @screen md {
       @apply mt-10;
       @apply grid grid-cols-2;
-      grid-gap: 30px;
+      grid-row-gap: 15px;
+      grid-column-gap: 30px;
     }
   }
   #home > div > * {
     @apply mb-2;
   }
-  #home h1,h2,h3 {
+  #home > h1, #home > h2, #home > h3 {
     @apply text-center
   }
   #home img.avatar {
