@@ -1,8 +1,9 @@
 <template>
-  <NLink :to="`/posts/${post.slug}`" tag="div" class="post-preview" :style="{ backgroundImage: coverSrc }">
+  <NLink :to="`/posts/${post.slug}`" tag="div" class="post-preview">
+    <img :src="coverSrc" alt="cover">
     <div class="information">
       <h3>{{ post.title }}</h3>
-      <p class="summary">{{ post.summary }}</p>
+      <p class="summary text-sm">{{ post.summary }}</p>
       <Tags :tags="post.tags" />
     </div>
   </NLink>
@@ -23,8 +24,7 @@ export default {
   },
   computed: {
     coverSrc () {
-      const cover = require(`~/assets/covers/${this.post.cover}`)
-      return `url(${cover})`
+      return require(`~/assets/covers/${this.post.cover}`)
     }
   }
 }
@@ -36,7 +36,7 @@ export default {
     @apply relative;
 
     /* Size */
-    @apply h-56;
+    @apply h-full;
 
     /* Display */
     @apply text-center;
