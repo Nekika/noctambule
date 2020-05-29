@@ -9,7 +9,7 @@
 export default {
   props: {
     date: {
-      type: Date,
+      type: Date || String,
       default: null
     },
     tags: {
@@ -18,7 +18,15 @@ export default {
     }
   },
   computed: {
-    formattedDate () { return this.date.toLocaleDateString() }
+    /*
+      Handles type bug
+      Sometimes date is a String when it should be a Date
+     */
+    formattedDate () {
+      if (typeof this.date !== 'string') { return this.date.toLocaleDateString() }
+      const date = new Date(this.date)
+      return date.toLocaleDateString()
+    }
   }
 }
 </script>
