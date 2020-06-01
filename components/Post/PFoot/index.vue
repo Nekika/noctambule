@@ -1,7 +1,7 @@
 <template>
   <div id="post-foot">
-    <Info :date="date" :tags="tags" />
     <Author />
+    <Info :date="date" :tags="tags" />
   </div>
 </template>
 
@@ -32,6 +32,12 @@ export default {
     @apply mt-5;
     @screen md {
       @apply grid grid-cols-2;
+    }
+  }
+  #post-foot > div {
+    @apply mt-4;
+    @screen md {
+      @apply mt-0;
     }
   }
 </style>
