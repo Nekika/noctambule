@@ -51,10 +51,10 @@ export default {
 
   .post-preview > .information {
     /* Position */
-    @apply absolute bottom-0 inset-x-0;
+    @apply bottom-0 inset-x-0;
 
     /* Display */
-    @apply p-2;
+    @apply p-2 text-center;
 
     /* Background */
     @apply bg-darkgrey;
