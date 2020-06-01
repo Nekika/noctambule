@@ -34,11 +34,21 @@ module.exports = {
       40: '160px',
       48: '192px',
       56: '224px',
-      64: '256px'
+      64: '256px',
+      75: '300px',
+      85: '340px'
     },
     fontFamily: {
       logo: ['Shadows Into Light', 'cursive'],
       body: ['Open Sans', 'sans-serif']
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      xxl: '1440px',
+      '4k': '2560px'
     }
   },
   variants: {},

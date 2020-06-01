@@ -36,7 +36,7 @@ export default {
   #home {
     @apply mt-4 text-justify;
     @screen md {
-      @apply grid grid-cols-2 gap-4;
+      @apply grid grid-cols-2 gap-8;
     }
   }
   #home > div > * {
