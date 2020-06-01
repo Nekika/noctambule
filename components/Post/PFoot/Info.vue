@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
-    <p class="text-lightgrey"> {{ date }} </p>
-    <Tags :tags="tags" />
+    <p class="text-lightgrey">{{ date }}</p>
+    <PostTags :tags="tags" />
   </div>
 </template>
 
