@@ -1,22 +1,9 @@
-# noctambule
+# Noctambule
 
-> My epic Nuxt.js project
+Noctambule is a minimalist blog where I share my personal experience, and my enthusiasm about things I like.
 
-## Build Setup
+## Stack
 
-```bash
-# install dependencies
-$ yarn install
+This project is mainly developed using [Nuxt](https://github.com/nuxt/nuxt.js) and it's recent [content plugin](https://github.com/nuxt/content) which, for this project, allows to fetch Markdown files through a MongoDB like API and access them from any Vue component.
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Since it's a blog, it should be readable on every type of devices so  I wanted it to be nicely responsive. This is why I've chosen to try [tailwind](https://github.com/tailwindcss/tailwindcss) because it's 100% customizable feature through a JS config file seduced me.
