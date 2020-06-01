@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center">
     <p class="text-lightgrey">Hugo « Nekika » Jahnke</p>
-    <p><a href="mailto:nekika@noctambule.something">nekika@noctambule.io</a></p>
+    <p><a href="mailto:contact@hugojahnke.fr">contact@hugojahnke.fr</a></p>
     <p>
       <a href="https://github.com/Nekika">GitHub</a>
       <a href="https://www.linkedin.com/in/hugo-jahnke-a96ba8146/">LinkedIn</a>
