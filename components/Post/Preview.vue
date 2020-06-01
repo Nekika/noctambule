@@ -39,6 +39,15 @@ export default {
     /* Background */
     @apply bg-cover;
   }
+  .post-preview > img {
+    filter: grayscale(100%);
+  }
+  .post-preview:hover {
+    cursor: pointer;
+  }
+  .post-preview:hover > img{
+    filter: grayscale(0%);
+  }
 
   .post-preview > .information {
     /* Position */

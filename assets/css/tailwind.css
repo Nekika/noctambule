@@ -22,3 +22,6 @@ h3 {
 a {
   @apply text-blue underline
 }
+a:hover {
+  @apply text-lightgrey
+}
