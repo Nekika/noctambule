@@ -27,7 +27,7 @@ export default {
     title () { return this.post.title },
     cover () { return this.post.cover },
     tags () { return this.post.tags },
-    date () { return this.post.updatedAt },
+    date () { return this.post.date },
     credits () { return this.post.credits }
   }
 }

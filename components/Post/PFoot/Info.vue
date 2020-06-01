@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <p class="text-lightgrey"> {{ formattedDate }} </p>
+    <p class="text-lightgrey"> {{ date }} </p>
     <Tags :tags="tags" />
   </div>
 </template>
@@ -9,23 +9,12 @@
 export default {
   props: {
     date: {
-      type: Date || String,
-      default: null
+      type: String,
+      default: ''
     },
     tags: {
       type: Array,
       default: () => []
-    }
-  },
-  computed: {
-    /*
-      Handles type bug
-      Sometimes date is a String when it should be a Date
-     */
-    formattedDate () {
-      if (typeof this.date !== 'string') { return this.date.toLocaleDateString() }
-      const date = new Date(this.date)
-      return date.toLocaleDateString()
     }
   }
 }

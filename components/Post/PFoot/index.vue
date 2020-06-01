@@ -16,8 +16,8 @@ export default {
   },
   props: {
     date: {
-      type: Date,
-      default: null
+      type: String,
+      default: 'null'
     },
     tags: {
       type: Array,
