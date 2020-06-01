@@ -4,7 +4,7 @@
       <div class="text-center absolute inset-x-0 bottom-0 bg-darkgrey pb-2">
         <h1 class="font-bold">{{ title }}</h1>
         <p class="text-lightgrey">Hugo « Nekika » Jahnke</p>
-        <Tags :tags="tags" />
+        <PostTags :tags="tags" />
       </div>
       <img :src="coverSrc" alt="cover">
     </div>
@@ -15,12 +15,7 @@
 </template>
 
 <script>
-import Tags from './Tags'
-
 export default {
-  components: {
-    Tags
-  },
   props: {
     title: {
       type: String,
