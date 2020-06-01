@@ -39,6 +39,12 @@ export default {
       @apply grid grid-cols-2 gap-8;
     }
   }
+  #home > div {
+    @apply mb-8;
+    @screen md {
+      @apply mb-0;
+    }
+  }
   #home > div > * {
     @apply mb-2;
   }
